@@ -7,7 +7,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @product.picture %>
+  <%= image_tag(@product.picture_url , :width => 100) if @product.picture.present? %>
 </p>
 
 <p>

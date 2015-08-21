@@ -18,7 +18,7 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
-        <td><%= product.picture %></td>
+        <td><%= image_tag(product.picture_url , :width => 50) if product.picture.present? %></td>
         <td><%= product.description %></td>
         <td><%= product.price %></td>
         <th><%= product.user.email %></th>
