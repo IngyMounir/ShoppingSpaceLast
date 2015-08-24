@@ -1,6 +1,12 @@
 class ProfileController < ApplicationController
 	
+
 	def show
-		current_user.credit = 100 if user_signed_in?
 	end
+
+	def create
+		current_user.credit = 100 
+		current_user.save	
+	end
+
 end
