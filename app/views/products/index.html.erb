@@ -1,5 +1,33 @@
 <p id="notice"><%= notice %></p>
 
+<p>3rd design</p>
+
+<h4 class="column">products</h4>
+<div class="column">
+  <ul class="products-grid no-bullet row">
+    <% @products.each do |product| %>
+      <li class="large-3 medium-4 small-12 column">
+        <div class="products-pic padly">
+          <%= link_to product, class: "poster" do %>
+            <%= image_tag product.picture %>
+          <% end %>
+          <div class="product-info ell glassy-bg padmy padlx">
+            <div class="title">
+              <h6><%= product.name %> <span>(<%= product.created_at %>)</span></h6>
+            </div>
+            <p class="left price label movie-label radius">$ <%= product.price %></p>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<div style="margin: 100px;">
+<hr>
+<p>second design</p>
+</div>
+
 <h1>Listing Products</h1>
 
   <% @products.each do |product| %>
@@ -21,7 +49,14 @@
   <%end%>
 
 
-  <div class="table" style="margin-top: 200px;">
+
+
+
+<hr>
+<p>first design</p>
+
+
+  <div class="table" style="margin-top: 100px;">
     <table>
     <thead>
       <tr>
