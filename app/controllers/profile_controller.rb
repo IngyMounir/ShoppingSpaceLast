@@ -5,7 +5,7 @@ class ProfileController < ApplicationController
 	end
 
 	def create
-		current_user.credit = 100 
+		current_user.credit = 500
 		current_user.save	
 	end
 
