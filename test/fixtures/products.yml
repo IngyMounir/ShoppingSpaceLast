@@ -4,10 +4,12 @@ one:
   name: MyString
   picture: MyString
   description: MyText
+  category: MyString
   price: 1
 
 two:
   name: MyString
   picture: MyString
   description: MyText
+  category: MyString
   price: 1
