@@ -4,14 +4,14 @@ Rails.application.routes.draw do
   resources :products
 
 root 'products#index'
-root 'category#accesories'
-root 'category#school_stuff'
-root 'category#cars'
-root 'category#electronic_devices'
-root 'category#bags'
-root 'category#departements'
-root 'category#pets'
-root 'category#books'
+#resources 'category#accesories'
+#resources 'category#school_stuff'
+#resources 'category#cars'
+#resources 'category#electronic_devices'
+#resources 'category#bags'
+#resources 'category#departements'
+#resources 'category#pets'
+#resources 'category#books'
 
 
 

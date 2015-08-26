@@ -10,7 +10,6 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
@@ -28,8 +27,17 @@
     <%= f.number_field :price %>
   </div>
   <div class="field">
-    <%= f.label :category %><br>
-    <%= f.text_field :category %>
+    <select aria.label ="category" name="category"><br>
+    <option value="0" >category</option>
+    <option value="1" >accessories</option>
+    <option value="2" >pets</option>
+    <option value="3" >bags</option>
+    <option value="4" >cars</option>
+    <option value="5" >departments</option>
+    <option value="6" >school_stuff</option>
+    <option value="7" >electronic_devices</option>
+    <option value="8" >books</option>
+
   </div>
   <div class="actions">
     <%= f.submit %>
