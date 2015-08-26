@@ -3,20 +3,21 @@ Rails.application.routes.draw do
   resources :products
   resources :products
 
-root 'products#index'
-#resources 'category#accesories'
-#resources 'category#school_stuff'
-#resources 'category#cars'
-#resources 'category#electronic_devices'
-#resources 'category#bags'
-#resources 'category#departements'
-#resources 'category#pets'
-#resources 'category#books'
-
-
-
-
-
+ root 'products#index'
 get 'profile' => 'profile#show'
+ ## get '/category/:esm_category' => 'category#show'
+
+
+  #redirect_to 'category/accessories
+
+
+
+
+
+
+
+
+
+
 
 end
